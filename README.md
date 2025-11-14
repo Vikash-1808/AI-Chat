@@ -1,16 +1,66 @@
-# React + Vite
+AI Chat App — README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive AI chat interface built with React, powered by the Gemini API, featuring multi-session chat, message persistence, and chat export.
 
-Currently, two official plugins are available:
+ Features
+1. Chat Sessions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Create new chat sessions
 
-## React Compiler
+Switch between multiple sessions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Delete specific sessions
 
-## Expanding the ESLint configuration
+Session titles automatically update based on first message
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. AI Messaging
+
+Send user messages and receive AI responses using the Gemini 2.5 Flash API
+
+Typing indicator / loading spinner
+
+Automatic scroll-to-bottom for every new message
+
+3. Persistent Storage
+
+All sessions and messages automatically saved in localStorage
+
+Reloading the browser keeps the entire chat history intact
+
+4. Download Features
+
+Download entire chat history as a .txt file
+
+Download a specific chat from the sidebar
+
+Clean formatting for user/AI messages
+
+5. UI Components
+
+Sidebar for sessions
+
+Message list and message bubble UI
+
+Chat input with Enter/Shift+Enter handling
+
+Mobile-responsive sidebar toggle
+
+6. Code Structure
+
+Modular React component architecture
+
+Centralized global state using ChatContext
+
+Shared utilities for localStorage + API handling
+
+🛠️ Tech Stack
+
+React + Vite
+
+Context API
+
+Gemini API (Google Generative Language API)
+
+TailwindCSS
+
+Axios
